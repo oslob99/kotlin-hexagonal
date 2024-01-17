@@ -1,4 +1,4 @@
-package com.okestro.idp.gitlab.application.dto
+package com.okestro.idp.gitlabtest.application.dto
 
 data class GetRepositoryResponse(
     val id: String,

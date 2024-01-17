@@ -1,4 +1,4 @@
-package com.okestro.idp.gitlab.application.port.out
+package com.okestro.idp.gitlabtest.application.port.out
 
 interface SaveGitlabTokenPort {
 

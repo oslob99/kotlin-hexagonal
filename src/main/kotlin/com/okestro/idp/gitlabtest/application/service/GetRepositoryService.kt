@@ -1,13 +1,11 @@
-package com.okestro.idp.gitlab.application.service
+package com.okestro.idp.gitlabtest.application.service
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.fasterxml.jackson.module.kotlin.kotlinModule
 import com.fasterxml.jackson.module.kotlin.readValue
 import com.okestro.idp.common.config.GitlabProperties
 import com.okestro.idp.common.config.RestClientConfig
 import com.okestro.idp.common.dto.BaseResponse
-import com.okestro.idp.gitlab.application.dto.GetRepositoryResponse
-import org.springframework.http.HttpMethod
+import com.okestro.idp.gitlabtest.application.dto.GetRepositoryResponse
 import org.springframework.stereotype.Service
 
 @Service
@@ -18,7 +16,7 @@ class GetRepositoryService(
 ) {
 
 
-    fun getRepository():BaseResponse<List<GetRepositoryResponse>>{
+    fun getRepository():List<GetRepositoryResponse>{
 
         val connectGitLab = restClientConfig.connectGitLab()
 
@@ -32,7 +30,7 @@ class GetRepositoryService(
         val gitlabApiResponseList: List<GetRepositoryResponse> =
             mapper.readValue(toEntity.body.toString())
 
-        return BaseResponse(gitlabApiResponseList)
+        return gitlabApiResponseList
 
     }
 

@@ -1,4 +1,4 @@
-package com.okestro.idp.gitlab.application.port.`in`.usecase
+package com.okestro.idp.gitlabtest.application.port.`in`.usecase
 
 import com.okestro.idp.common.annotation.UseCase
 

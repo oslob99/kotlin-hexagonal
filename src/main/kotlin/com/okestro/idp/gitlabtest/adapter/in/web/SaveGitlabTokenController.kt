@@ -1,6 +1,6 @@
-package com.okestro.idp.gitlab.adapter.`in`.web
+package com.okestro.idp.gitlabtest.adapter.`in`.web
 
-import com.okestro.idp.gitlab.application.port.`in`.usecase.SaveGitlabTokenUseCase
+import com.okestro.idp.gitlabtest.application.port.`in`.usecase.SaveGitlabTokenUseCase
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestMapping

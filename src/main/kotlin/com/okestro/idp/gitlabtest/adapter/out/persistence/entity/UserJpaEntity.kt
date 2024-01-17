@@ -1,4 +1,4 @@
-package com.okestro.idp.gitlab.adapter.out.persistence.entity
+package com.okestro.idp.gitlabtest.adapter.out.persistence.entity
 
 import jakarta.persistence.Column
 import jakarta.persistence.Entity

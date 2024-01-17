@@ -1,4 +1,4 @@
-package com.okestro.idp.gitlab.doamin
+package com.okestro.idp.gitlabtest.doamin
 
 class User (
 
